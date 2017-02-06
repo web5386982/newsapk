@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include
+        android:id="@+id/title_forget_pwd"
+        layout="@layout/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/login_forget_pwd_sure"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/edt_frame"
+        android:layout_alignTop="@+id/title_forget_pwd"
+        android:layout_marginTop="100dp"
+        android:singleLine="true"
+        android:hint="请输入账号:"
+        />
+    <TextView
+        android:id="@+id/login_on_sure_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:text="确认"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/login_forget_pwd_sure"
+        android:layout_marginTop="60dp"
+        android:background="#9a0202"
+    />
+
+    <!--<EditText-->
+        <!--android:id="@+id/install_pwd_edt"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginLeft="35dp"-->
+        <!--android:layout_marginRight="35dp"-->
+        <!--android:background="@drawable/edt_frame"-->
+        <!--android:layout_alignTop="@+id/login_forget_pwd_sure"-->
+        <!--android:layout_marginTop="60dp"-->
+        <!--android:password="true"-->
+        <!--android:hint="请输入密码:"-->
+        <!--/>-->
+    <!--这里说的相对于边界,指的是相对于距离他最近的控件的边界-->
+
+</RelativeLayout>

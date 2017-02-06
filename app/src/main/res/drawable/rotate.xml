@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-rotate xmlns:android="http://schemas.android.com/apk/res/android">
+<transition android:paddingLeft="100dp" android:paddingTop="@dimen/activity_horizontal_margin">
+</transition>
+</animated-rotate>

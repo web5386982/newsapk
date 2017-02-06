@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/include_user_core"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#aa0000"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/user_title_img_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@mipmap/typemore_normal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的账号"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="           "
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_core_layout_relative"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@mipmap/center_top_bg"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="58dp"
+        >
+
+        <ImageView
+            android:id="@+id/user_core_img_photo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/send" />
+
+        >
+
+        <TextView
+            android:id="@+id/user_core_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/user_core_img_photo"
+            android:layout_alignTop="@+id/user_core_img_photo"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:text="用户名"
+            android:textColor="#0f8"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:id="@+id/user_core_user_intergrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/user_core_user_name"
+            android:layout_alignTop="@+id/user_core_user_name"
+            android:layout_marginTop="40dp"
+            android:text="积分:"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/user_core_intergrate_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/user_core_user_intergrate"
+            android:layout_alignTop="@+id/user_core_user_intergrate"
+            android:layout_marginLeft="40dp"
+            android:text="积分数"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/user_core_context_census"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/user_core_layout_relative"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:text="跟帖数统计:"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/user_context_census_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_core_context_census"
+        android:layout_alignTop="@+id/user_core_context_census"
+        android:layout_marginLeft="100dp"
+        android:text="积分数"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/user_login_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/user_core_context_census"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:text="跟帖数统计:"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+    <ListView
+        android:id="@+id/user_core_lst_main"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignTop="@+id/user_login_log"
+        android:layout_marginTop="40dp"
+
+        >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/user_core_btn_quit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2594b"
+        android:text="退出登录"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
